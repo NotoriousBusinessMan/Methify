@@ -31,3 +31,46 @@ body {
     text-wrap: balance;
   }
 }
+
+.green:active {
+  background: #52f639;
+  color: #000;
+}
+.red:active {
+  background: #ff3333;
+  color: #000;
+}
+
+@media (max-width:600px){
+  header div.center {
+    display: none;
+  }
+  header div.right {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .left {
+    text-align: center;
+    width: 100%;
+  }
+  section div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  section div.center h3{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  section div.bottom ul {
+    width: 80%;
+    margin:0 auto;
+  }
+  section div.bottom ul li {
+    width: 20%;
+  }
+}
